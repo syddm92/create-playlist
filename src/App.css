@@ -23,6 +23,219 @@
 }
 
 @keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+#landing-bg {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.login-area {
+  background-color: black;
+  opacity: 0.8;
+  z-index: 1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  height: 50vh;
+}
+
+.btns {
+  width: 80%;
+  height: 20%;
+  display: block;
+  position: relative;
+  top: 40%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  margin-bottom: 50px;
+  font-size: 36px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: black !important;
+  cursor: pointer;
+}
+
+form {
+  color: white;
+}
+
+#create:hover {
+  color: orange !important;
+  border-color: orange;
+  background-color: black;
+  cursor: pointer;
+}
+
+#create {
+  z-index: 2;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+
+form input {
+  padding: 5px;
+  margin: 10px;
+  width: 30vw;
+  margin-left: 50px;
+}
+
+#email {
+  margin-left: 130px;
+}
+
+#login-form {
+  position: absolute;
+  z-index: 5;
+  top: 5vh;
+  left: 10vw;
+}
+
+#login-form input {
+  margin: 30px;
+}
+
+.right {
+  float: right;
+}
+
+.bttn {
+  height: 5vh;
+  width: 10vw;
+  position: relative;
+  margin: 15px;
+  margin-right: 30px;
+}
+
+#register-form {
+  position: relative;
+}
+.buttn {
+  height: 5vh;
+  width: 10vw;
+  position: relative;
+  margin: 15px;
+  right: 14.5vw;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  width: 100%;
+  border-radius: 50px;
+  position: fixed;
+}
+
+.navbar li {
+  float: left;
+  cursor: pointer;
+}
+
+.navbar li a {
+  display: block;
+  color: white !important;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar li a:hover {
+  background-color: #111;
+}
+
+.logo {
+  height: 52px;
+  width: 120px;
+  position: relative;
+  left: 30px;
+}
+
+.aside {
+  margin-left: 50px;
+}
+
+.container {
+  background-color: #f5f5f5;
+  height: auto;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: row;
+  margin-top: 50px;
+}
+
+.song-container {
+  position: relative;
+  background-color: bisque;
+  width: 200px;
+  margin: 30px;
+  cursor: pointer;
+  border: 2px solid black;
+  font-weight: bold;
+}
+.song-container:hover {
+  border: 2px solid darkblue;
+  background-color: lightblue;
+  color: darkblue;
+}
+
+.album-image {
+  margin-top: 10px;
+  width: 180px;
+  height: 200px;
+}
+.exit-btn {
+  position: relative;
+  float: right;
+  height: 20px;
+  width: 20px;
+  z-index: 10;
+  cursor: pointer;
+  top: 3px;
+}
+
+.playlist-song-container {
+  position: relative;
+  background-color: #e1e1e1;
+  width: 200px;
+  margin: 30px;
+  border: 2px solid darkgray;
+  font-weight: bold;
+  border-radius: 15px;
+  font-family: cursive, sans-serif;
+}
+
+.status {
+  font-weight: bold;
+  font-size: 24px;
+  color: darkmagenta;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.playlist {
+  color: maroon;
+}
+
+.search {
+  background-color: #111;
+  color: yellow;
+  margin-top: 55px;
+  margin-left: 40%;
 }
